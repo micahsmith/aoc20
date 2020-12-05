@@ -5,7 +5,7 @@ pub fn start(input: &str) {
     println!("{}", two_valid);
 }
 
-#[derive(Debug, Eq, Hash, PartialEq)]
+#[derive(Debug)]
 struct Policy {
     character: char,
     large: i32,
