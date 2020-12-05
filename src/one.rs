@@ -11,7 +11,7 @@ pub fn start(input: &str) {
 
 fn process_input(input: &str) -> HashSet<i32> {
     let vec: Vec<i32> = input
-        .split('\n')
+        .lines()
         .filter(|&line| line != "")
         .map(|line| line.parse::<i32>().unwrap())
         .collect();
